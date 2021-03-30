@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Div tag & class </title>
+    <style>
+        .object {
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            margin: auto;
+            transition: 2s;
+        }
+        
+        .object:hover {
+            background-color: blueviolet;
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            /* We can give any type of BORDER RADIUS FOR EX border-radius: 20px;20px 40px; 60px; */
+            box-shadow: 5px 10px 15px greenyellow;
+            /* In the BOX-SHADOW Property 1st 5PX for rightside , 10PX for bottom and 15PX for spread the shadow. WE CAN GIVE MULTIPLE PROPERTY USING COMA SIGN* AND IF WE GIVE NEGATIVE VALUE -5PX IT WILL WORK FOR LEFT SIDE SAME AS -10PX WORKS FOR BOTTOM/ */
+        }
+        
+        .object2 {
+            width: 200px;
+            height: 200px;
+            background-color: indianred;
+            float: left;
+        }
+        
+        .bg-color-lightblue {
+            background-color: lightblue;
+        }
+        
+        .bg-color-lightpink {
+            background-color: lightpink;
+        }
+        
+        .bg-color-mediumseagreen {
+            background-color: mediumseagreen;
+        }
+        
+        .bg-color-slategray {
+            background-color: slategray;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Below I have written inline style -->
+    <!-- <div style="width: 300px;height: 300px;background-color: aqua; margin: auto;"></div> -->
+
+    <!-- <div class="object"></div> -->
+    <!--Here I called OBJECT class-->
+    <br>
+    <br>
+    <div style="width: 800px; margin: auto;">
+        <div class="object2 bg-color-lightblue"></div>
+
+        <div class="object2 bg-color-lightpink"></div>
+
+        <div class="object2 bg-color-mediumseagreen"></div>
+
+        <div class="object2 bg-color-slategray"></div>
+
+    </div>
+
+    <div style="width: 1000px;">
+        <a href="gallery.html" target="_blank">GALLERY(BOX-SIZING)</a> |
+        <a href="divtag.html" target="_blank">DIVTAG DEMO</a> |
+        <a href="navbar.html" target="_blank">NAVBAR</a> |
+        <a href="picdemo.html" target="_blank">PIC DEMO</a> |
+        <a href="position1.html" target="_blank">EDUCATION</a>
+    </div>
+
+</body>
+
+</html>
