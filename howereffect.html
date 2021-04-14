@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hower Effect</title>
+    <style>
+        .bg-color-green {
+            background-color: green;
+        }
+        
+        .bg-color-grey {
+            background-color: rgba(128, 128, 128, 0.123);
+        }
+        
+        .owt {
+            width: 33.3333%;
+            height: 300px;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: auto;
+            float: left;
+        }
+        
+        .height {
+            height: 310px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        p {
+            text-align: center;
+            font-size: 50px;
+        }
+        
+        .header {
+            width: 280px;
+            height: 280px;
+            background-color: #100b3b;
+            border-radius: 0% 0% 70% 70%;
+            position: absolute;
+            top: -150px;
+        }
+        
+        .owt:hover .header {
+            background-color: rgba(29, 151, 199, 0.863);
+        }
+        
+        .header img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 205px;
+            left: 80px;
+            border: 7px solid white;
+        }
+        
+        .title {
+            height: 55px;
+            width: 280px;
+            margin: auto;
+            position: absolute;
+            top: 165px;
+            left: 90px;
+        }
+        
+        .title h5 {
+            text-align: justify;
+            margin-left: -30px;
+            margin-top: -15px;
+        }
+        
+        .footer {
+            width: 280px;
+            height: 10px;
+            position: absolute;
+            bottom: -5px;
+            background-color: #100b3b;
+        }
+        
+        .footer-icons {
+            width: 280px;
+            height: 25px;
+            position: absolute;
+            bottom: -30px;
+            background-color: rgba(25, 25, 187, 0.959);
+            padding: 5px;
+            transition: 2s;
+        }
+        
+        .footer-icons i {
+            margin-left: 25px;
+            margin-top: 5px;
+            padding-left: 10px;
+        }
+        
+        .owt:hover .footer-icons {
+            bottom: 6px;
+            background-color: rgba(29, 151, 199, 0.863);
+        }
+        
+        .green-circle {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 47px;
+            left: 72px;
+            visibility: hidden;
+        }
+        
+        .owt:hover .green-circle {
+            visibility: visible;
+            box-shadow: 0px 0px 0px 5px green;
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <p>Team 10</p>
+    <div style="margin: auto; width: 900px;">
+        <div class="owt">
+            <div class="height bg-color-grey">
+                <div class="header">
+                    <img src="image/mypic.jpg" alt="pic">
+                </div>
+                <div class="green-circle"></div>
+                <div class="title">
+                    <h1>Team 1</h1>
+                    <h5>Inhaber & Geschaftsfuhrer</h5>
+                </div>
+                <div class="footer-icons">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="footer"></div>
+            </div>
+        </div>
+        <div class="owt">
+            <div class="height bg-color-grey">
+                <div class="header">
+                    <img src="image/20181225_112811.jpg" alt="pic">
+                </div>
+                <div class="green-circle"></div>
+                <div class="title">
+                    <h1>Team 1</h1>
+                    <h5>Inhaber & Geschaftsfuhrer</h5>
+                </div>
+                <div class="footer-icons">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="footer"></div>
+            </div>
+        </div>
+        <div class="owt">
+            <div class="height bg-color-grey">
+                <div class="header">
+                    <img src="image/20181223_185048.jpg" alt="pic">
+                </div>
+                <div class="green-circle"></div>
+                <div class="title">
+                    <h1>Team 1</h1>
+                    <h5>Inhaber & Geschaftsfuhrer</h5>
+                </div>
+                <div class="footer-icons">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="footer"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
