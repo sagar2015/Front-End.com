@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE SCREEN</title>
+    <style>
+        div {
+            display: none;
+        }
+        /* @media (max-width:426px) {
+            #sm {
+                display: block;
+                color: blue;
+            }
+        }
+        
+        @media (max-width:768px) {
+            #md {
+                display: block;
+            }
+        }
+        
+        @media (max-width:1024px) {
+            #lg {
+                display: block;
+            }
+        }
+        
+        @media (max-width:1450px) {
+            #xl {
+                display: block;
+            }
+        } */
+        
+        @media(min-width:1024px) {
+            #xl {
+                color: blue;
+                display: block;
+            }
+        }
+        
+        @media(min-width:768px) and (max-width:1023px) {
+            #lg {
+                color: chartreuse;
+                display: block;
+            }
+        }
+        
+        @media(min-width:426px) and (max-width:767px) {
+            #md {
+                color: crimson;
+                display: block;
+            }
+        }
+        
+        @media(max-width:426px) {
+            #sm {
+                display: block;
+                color: darkcyan;
+            }
+        }
+        /* @media print {
+            div {
+                color: green;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="sm">
+        <h1>MOBILE SCREEN</h1>
+        <img src="image/Samsung_image.jpg" alt="samsung mobile">
+    </div>
+    <div id="md">
+        <h1>TABLET SCREEN</h1>
+        <img src="image/tablet_image.jpg" alt="tablet image">
+    </div>
+    <div id="lg">
+        <h1>LAPTOP SCREEN</h1>
+        <img src="image/laptop_image.webp" alt="laptop image">
+    </div>
+    <div id="xl">
+        <h1>LED SCREEN</h1>
+        <img src="image/led-video-wall.jpg" alt="Led images">
+    </div>
+
+</body>
+
+</html>
