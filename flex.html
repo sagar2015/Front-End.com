@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX </title>
+    <style>
+        .container {
+            display: flex;
+            /* flex-direction: row-reverse; */
+            flex-direction: row;
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            justify-content: space-around;
+        }
+        
+        .owt {
+            padding: 10px;
+            border: 2px solid rgb(4, 19, 19);
+            color: rgb(24, 18, 18);
+            width: 25%;
+        }
+        
+        .bg-color-lime {
+            background-color: rgba(0, 255, 0, 0.438);
+        }
+        
+        .bg-color-sky {
+            background-color: rgba(79, 161, 216, 0.74);
+        }
+        
+        .bg-color-violate {
+            background-color: rgb(211, 125, 211);
+        }
+        
+        .box1 {
+            flex: 2;
+            order: 3;
+        }
+        
+        .box2 {
+            flex: 2;
+            order: 3;
+        }
+        
+        .box3 {
+            flex: 2;
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;color: red;">FLEX CSS DEMO</h1>
+    <div class="container">
+        <div class="owt bg-color-lime box1">
+            <h1>N0: 1</h1>This being human is a guest house. Every morning is a new arrival. A joy, a depression, a meanness, some momentary awareness comes as an unexpected visitor...Welcome and entertain them all. Treat each guest honorably. The dark thought,
+            the shame, the malice, meet them at the door laughing, and invite them in. Be grateful for whoever comes, because each has been sent as a guide from beyond.</div>
+
+        <div class="owt bg-color-sky box2">
+            <h1>N0: 2</h1>It's not wrong to be upset. It's not wrong to cry. It's not wrong to want attention. It's not even wrong to scream or throw a fit. What is wrong is to keep it all inside. What is wrong is to blame and punish yourself for simply being
+            human. What is wrong is to never be heard and to be alone in your pain. Share it. Let it out.</div>
+
+        <div class="owt bg-color-violate box3">
+            <h1>N0: 3</h1>More fundamental than religion is our basic human spirituality. We have a basic human disposition towards love, kindness and affection, irrespective of whether we have a religious framework or not. When we nurture this most basic
+            human resource - when we set about cultivating those basic inner values which we all appreciate in others, then we start to live spiritually.</div>
+    </div>
+
+
+</body>
+
+</html>
