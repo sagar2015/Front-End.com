@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGE LOADER</title>
+    <style>
+        .spin {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 10px solid green;
+            animation-name: spin;
+            animation-iteration-count: infinite;
+            border-top-color: rgb(224, 226, 238);
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            margin: auto;
+        }
+        
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .container {
+            width: 100px;
+            margin: auto;
+            margin-top: 80px;
+        }
+        
+        .dot1 {
+            width: 15px;
+            height: 15px;
+            background-color: blue;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 5px;
+            animation-name: jumping;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 0.1s;
+        }
+        
+        .dot2 {
+            width: 15px;
+            height: 15px;
+            background-color: rgb(23, 216, 103);
+            border-radius: 50%;
+            display: inline-block;
+            margin: 5px;
+            animation-name: jumping;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 0.2s;
+        }
+        
+        .dot3 {
+            width: 15px;
+            height: 15px;
+            background-color: rgb(224, 20, 37);
+            border-radius: 50%;
+            display: inline-block;
+            margin: 5px;
+            animation-name: jumping;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-delay: 0.3s;
+        }
+        
+        @keyframes jumping {
+            100% {
+                transform: translate(0, 20px);
+            }
+        }
+        
+        .dotted_circle {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: 5px dotted rgba(20, 74, 190, 0.514);
+            margin: auto;
+            margin-top: 10%;
+        }
+        
+        .loading_360 {
+            width: 100%;
+            height: 100%;
+            border: 10px solid black;
+            border-radius: 50%;
+            border-top: 10px solid transparent;
+            animation-name: load2;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: relative;
+            top: -10px;
+            left: -10px;
+        }
+        
+        @keyframes load2 {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .container_dot_spin {
+            height: 150px;
+            width: 900px;
+            margin: auto;
+            margin-top: 10%;
+            margin-left: 47%;
+        }
+        
+        .dot_spin_360 {
+            height: 50px;
+            width: 50px;
+            border: 5px dotted red;
+            border-radius: 50%;
+            animation-name: dot_spin;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        
+        @keyframes dot_spin {
+            25% {
+                transform: rotate(90deg);
+                border-color: yellowgreen;
+            }
+            50% {
+                transform: rotate(180deg);
+                border-color: rgb(187, 20, 131);
+            }
+            75% {
+                transform: rotate(270deg);
+                ;
+                border-color: rgb(9, 121, 109);
+            }
+            100% {
+                transform: rotate(360deg);
+                border-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="spin"></div>
+
+    <div class="container">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+        <div class="dot3"></div>
+    </div>
+
+    <div class="dotted_circle">
+        <div class="loading_360"></div>
+    </div>
+    <div class="container_dot_spin">
+        <div class="dot_spin_360"></div>
+    </div>
+</body>
+
+</html>
