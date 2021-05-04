@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COURSE LAYOUT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .course_title h1 {
+            text-align: center;
+            color: aqua;
+            text-decoration: underline solid 3px;
+            margin-top: 20px;
+        }
+        
+        .course_title {
+            width: 100%;
+            margin: auto;
+        }
+        
+        .owt {
+            width: 33.3333%;
+            margin: auto;
+            height: 250px;
+            /* background-color: cadetblue; */
+            float: left;
+            margin-top: 40px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 1000px;
+            margin: auto;
+            clear: both;
+        }
+        
+        .main {
+            width: 100%;
+            /* background-color: chartreuse; */
+            height: 100%;
+        }
+        
+        .container .owt .main img {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .title {
+            width: 100%;
+        }
+        
+        .title p {
+            text-align: end;
+            padding: 10px;
+            font-size: 20px;
+        }
+        
+        .title h5 {
+            text-align: end;
+            padding: 0px 10px;
+            margin-top: -5px;
+        }
+        
+        .footer {
+            width: 100%;
+            background-color: rgba(128, 128, 128, 0.308);
+            padding: 15px 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        
+        .footer button {
+            background-color: rgb(94, 185, 221);
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+            width: 50px;
+            border-style: none;
+            margin-left: 5px;
+        }
+        
+        .footer span {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        .footer i {
+            margin-right: -4px;
+        }
+        
+        .icons {
+            color: rgb(14, 3, 3);
+            font-size: 20px;
+            transform: translate(0px, -145px);
+            color: white;
+        }
+        
+        .icons .heart {
+            margin-left: 10px;
+        }
+        
+        .icons .day {
+            margin-left: 50px;
+        }
+        
+        .icons .calender {
+            margin-left: 15px;
+        }
+        
+        .price {
+            background-color: rgb(28, 136, 179);
+            color: white;
+            font-weight: bold;
+            width: 50px;
+            text-align: center;
+            padding: 5px;
+            transform: translate(243px, -320px);
+        }
+        
+        .price_finance {
+            background-color: rgb(226, 42, 57);
+            color: white;
+            font-weight: bold;
+            width: 50px;
+            text-align: center;
+            padding: 5px;
+            transform: translate(243px, -320px);
+        }
+        /* Mobile Screen 576 */
+        
+        @media only screen and (max-width:576px) {
+            .owt {
+                width: 100%;
+                height: 100vh;
+                margin-bottom: 20%;
+            }
+            .owt .price {
+                position: absolute;
+                /* top: -40px; */
+                left: 135px;
+                /* top: 501px; */
+                color: white;
+                transform: translate(790px, -1059px);
+            }
+            .owt .price_finance {
+                position: absolute;
+                /* top: -40px; */
+                left: 135px;
+                /* top: 501px; */
+                color: white;
+                transform: translate(790px, -1045px);
+            }
+            .footer {
+                width: 100%;
+                padding: 40px;
+            }
+            .footer span {
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+            .footer button {
+                margin-left: 15%;
+            }
+            .footer i {
+                margin: 1px;
+            }
+        }
+        /* Tablet Screen */
+        
+        @media only screen and (max-width:768px) {
+            .owt {
+                width: 50%;
+                height: 700px;
+                margin-bottom: 10%;
+            }
+            .owt .price {
+                position: relative;
+                left: -380px;
+                top: 280px;
+                color: white;
+                transform: translate(790px, -1059px);
+            }
+            .owt .price_finance {
+                position: relative;
+                top: -300px;
+                left: -380px;
+                top: 280px;
+                color: white;
+                transform: translate(790px, -1045px);
+            }
+            .footer {
+                width: 100%;
+                padding-top: 20px;
+            }
+            .footer span {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            .footer button {
+                margin-left: 5%;
+                margin-right: 10px;
+            }
+            .footer i {
+                margin: 1px;
+                margin-left: 5px;
+            }
+            .icons {
+                transform: translate(0px, -175px);
+                font-size: xx-large;
+            }
+            .owt .icons .heart {
+                margin-left: 30px;
+                font-weight: bold;
+            }
+            .owt .icons .day {
+                margin-left: 35px;
+                margin-right: 10px;
+                font-weight: bold;
+            }
+            .owt .icons .calender {
+                margin-left: 15px;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+<body>
+    <div class="course_title">
+        <h1>Our Courses</h1>
+    </div>
+    <div class="container">
+        <div class="owt">
+            <div class="main">
+                <img src="image/construction.jfif" alt="construction">
+            </div>
+            <div class="title">
+                <p> Government Recruittment</p>
+                <h5>By Peter Parker</h5>
+            </div>
+            <div class="footer">
+                <button>Enroll</button>
+                <span>Students 15 <i class="fas fa-users"></i></span>
+
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+
+            </div>
+            <div class="icons">
+                <span class="heart"><i class="far fa-heart"></i></span>
+                <span class="day">Day 1 <i class="far fa-clock"></i></span>
+                <span class="calender">27-04-2021 <i class="fas fa-calendar-alt"></i></span>
+            </div>
+            <div class="price">
+                <p>$276</p>
+            </div>
+        </div>
+        <div class="owt">
+            <div class="main">
+                <img src="image/finance.png" alt="finance">
+            </div>
+            <div class="title">
+                <p>Banking</p>
+                <h5>By Michael Winzard</h5>
+            </div>
+            <div class="footer">
+                <button>Enroll</button>
+                <span>Students 25 <i class="fas fa-users"></i></span>
+
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+
+            </div>
+            <div class="icons">
+                <span class="heart"><i class="fas fa-heart"></i></i></span>
+                <span class="day">Day 1 <i class="far fa-clock"></i></span>
+                <span class="calender">27-04-2021 <i class="fas fa-calendar-alt"></i></span>
+            </div>
+            <div class="price_finance">
+                <p>$299</p>
+            </div>
+
+        </div>
+        <div class="owt">
+            <div class="main">
+                <img src="image/website.jpg" alt="website">
+            </div>
+            <div class="title">
+                <p> Programming </p>
+                <h5>By Sarah Taylor</h5>
+            </div>
+            <div class="footer">
+                <button>Enroll</button>
+                <span>Students 20 <i class="fas fa-users"></i></span>
+
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+
+            </div>
+            <div class="icons">
+                <span class="heart"><i class="far fa-heart"></i></span>
+                <span class="day">Day 1 <i class="far fa-clock"></i></span>
+                <span class="calender">27-04-2021 <i class="fas fa-calendar-alt"></i></span>
+            </div>
+            <div class="price">
+                <p>$499</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
