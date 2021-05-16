@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .input_value {
+            display: flex;
+            justify-content: center;
+        }
+        
+        input {
+            width: 80px;
+            margin: 15px;
+            font-size: large;
+        }
+        
+        .btn {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+        
+        button {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .btn button span {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input_value">
+        <input type="text" value="0" id="first">
+
+        <span id="operator" style="margin: 15px;"> </span>
+
+        <input type="text" value="0" id="second">
+
+        <span style="margin: 15px;">=</span>
+
+        <input type="text" value="0" id="result">
+    </div>
+    <div class="btn">
+        <button type="button" onclick="addition()"><span>+</span></button>
+
+        <button type="button" onclick="subtraction()"><span>-</span></button>
+
+        <button type="button" onclick="multiply()"><span>*</span></button>
+
+        <button type="button" onclick="division()"><span>/</span></button>
+
+        <button type="button" onclick="erase()"><span>CLEAR</span></button>
+
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
