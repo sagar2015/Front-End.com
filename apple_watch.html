@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLE WATCH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="watch-box">
+            <img src="images/watch1.jpg" onmouseover="watch_animation(this.src)" alt="watch1">
+        </div>
+
+
+        <div class="watch-box">
+            <img src="images/watch2.jpg" onmouseover="watch_animation(this.src)" alt="watch2">
+        </div>
+
+        <div class="watch-box">
+            <img src="images/watch3.jpg" onmouseover="watch_animation(this.src)" alt="watch3">
+        </div>
+
+        <div class="show-image" id="display_image">
+            <img src=" images/watch2.jpg ">
+        </div>
+
+        <div class="watch_details">
+            <h3>WATCH PRICE</h3>
+            <label>PRICE : </label>
+            <input type="number" id="price" placeholder="Enter Price" onchange="calculate_price()"><br>
+
+            <label>QUANTITY : </label>
+            <input type="number" id="qty" placeholder="Enter Quantity" onchange="calculate_price()"><br><br>
+
+
+            <label>SUB-TOTAL : </label>
+            <span id="sub-total"> $ </span><br>
+
+            <label>DISCOUNT : </label>
+            <input type="number" id="dis" placeholder="Enter Discount" onchange="calculate_price()"> <span>%</span> <br><br>
+            <label>DISCOUNTED AMOUNT :  $</label>
+            <span id="discounted_amt"></span><br><br>
+
+            <label>TAX  13 % : $</label>
+            <span id="tax"></span><br><br>
+
+            <label>TOTAL : $</label>
+            <span id="total"></span>
+
+        </div>
+    </div>
+    <script src="apple-watch.js "></script>
+</body>
+
+</html>
